@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(150, 83, 213);
+}
+/* for container */
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* for about song */
+.aboutSong{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    background-image: url();
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.songName{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.artist{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* for aboutBtn */
+.aboutBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/* for aboutTime */
+.aboutTime{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px;
+}
+.previousBtn,.nextBtn{
+    margin: 25px;
+}
+.previousBtn:active,.nextBtn:active,.playpauseBtn:active{
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+/* timeLength */
+.timeLength{
+    width: 400px;
+    height: 5px;
+    background-color: wheat;
+}
+.currentTime,.totalTime{
+    color: white;
+    padding: 0px 8px;
+}
+/* currentLength */
+.currentLength{
+    width: 0px;
+    height: 5px;
+    background-color: black;
+}
+/* for hidden */
+.hidden{
+    display: none;
+}
